@@ -37,16 +37,16 @@ public class UnloadedKeystore {
         PKCS12,
         JKS
     }
-    
+
     private Path keystoreFilepath;
     private String keystorePwd;
     private KeystoreType keystoreType;
     private String keystoreCertPwd;
 
-    protected void checkConsistency() throws KeyManagementException{
+    protected void checkConsistency() throws KeyManagementException {
         if (keystoreFilepath == null || keystoreType == null
                 || StringUtils.isEmpty(keystoreCertPwd)
-                || StringUtils.isEmpty(keystorePwd)){
+                || StringUtils.isEmpty(keystorePwd)) {
             throw new KeyManagementException("Your UnloadedKeystore object is not complete, "
                     + "all information must be provided");
         }
@@ -83,6 +83,5 @@ public class UnloadedKeystore {
     public void setKeystoreCertPwd(String keystoreCertPwd) {
         this.keystoreCertPwd = keystoreCertPwd;
     }
-    
-    
+
 }
