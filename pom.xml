@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.zg2pro</groupId>
+        <artifactId>zg2pro-spring-core</artifactId>
+        <version>0.2</version>
+    </parent> 
+
+    <groupId>com.github.zg2pro</groupId>
+    <artifactId>spring-rest-basis-ssl</artifactId>
+    <name>spring-rest-basis-ssl</name>
+    <description>A library of tools that come handy when doing spring-rest development, extension with goodies for ssl</description>
+    <packaging>jar</packaging>
+    <version>0.1-SNAPSHOT</version>
+    <url>https://github.com/zg2pro/spring-rest-basis</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+	
+    <developers>
+        <developer>
+            <name>Gregory Anne</name>
+            <email>englishblazere@free.fr</email>
+            <url>https://github.com/zg2pro</url>
+        </developer>
+    </developers>
+        
+    <scm>
+        <connection>scm:git:https://github.com/zg2pro/spring-rest-basis-ssl.git</connection>
+        <developerConnection>scm:git:git@github.com:zg2pro/spring-rest-basis-ssl.git</developerConnection>
+        <url>https://github.com/zg2pro/spring-rest-basis-ssl</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.github.zg2pro</groupId>
+            <artifactId>spring-rest-basis</artifactId>
+			<version>0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+</project>
