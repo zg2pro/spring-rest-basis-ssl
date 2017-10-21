@@ -46,12 +46,12 @@
         <dependency>
             <groupId>com.github.zg2pro</groupId>
             <artifactId>spring-rest-basis</artifactId>
-            <version>0.3-SNAPSHOT</version>
+            <version>0.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.3</version>
+            <version>4.5.3</version><!-- todo: version nb can be removed when upgrading parent -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
