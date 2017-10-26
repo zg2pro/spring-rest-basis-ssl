@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.zg2pro</groupId>
         <artifactId>zg2pro-spring-core</artifactId>
-        <version>0.2</version>
+        <version>0.3</version>
     </parent> 
 
     <groupId>com.github.zg2pro</groupId>
@@ -60,7 +60,6 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.3</version><!-- todo: version nb can be removed when upgrading parent -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
