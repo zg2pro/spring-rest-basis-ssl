@@ -71,6 +71,7 @@ public class LogsSslTest extends LogsTest {
     @Test
     public void testInterceptor() {
         UnloadedKeystore keystore = testKeystore();
+        LoggingSslRequestFactoryFactory.build(keystore);
         List<ClientHttpRequestInterceptor> lInterceptors = new ArrayList<>();
         //spring boot default log level is info
         lInterceptors.add(new LoggingRequestInterceptor(StandardCharsets.ISO_8859_1, 100, Level.ERROR));
