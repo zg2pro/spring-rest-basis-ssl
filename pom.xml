@@ -40,13 +40,22 @@
         <url>https://github.com/zg2pro/spring-rest-basis-ssl</url>
         <tag>HEAD</tag>
     </scm>
-
+    <properties>
+        <spring-rest-basis-version>0.4</spring-rest-basis-version>
+    </properties>
     
     <dependencies>
         <dependency>
             <groupId>com.github.zg2pro</groupId>
             <artifactId>spring-rest-basis</artifactId>
-            <version>0.3</version>
+            <version>${spring-rest-basis-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.zg2pro</groupId>
+            <artifactId>spring-rest-basis</artifactId>
+            <version>${spring-rest-basis-version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
