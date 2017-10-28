@@ -42,6 +42,8 @@ import org.apache.http.ssl.SSLContexts;
 
 /**
  *
+ * to build a Zg2proSslHttpRequestFactory
+ * 
  * @author zg2pro
  */
 public class Zg2proSslHttpRequestFactoryFactory {

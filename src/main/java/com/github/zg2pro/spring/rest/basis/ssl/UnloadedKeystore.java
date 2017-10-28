@@ -29,10 +29,15 @@ import org.springframework.util.StringUtils;
 
 /**
  *
+ * This is a structure which helps you gather your keystore information in an object
+ * 
  * @author zg2pro
  */
 public class UnloadedKeystore {
 
+    /**
+     * depending on the extension of your file p12 or jks
+     */
     public enum KeystoreType {
         PKCS12,
         JKS

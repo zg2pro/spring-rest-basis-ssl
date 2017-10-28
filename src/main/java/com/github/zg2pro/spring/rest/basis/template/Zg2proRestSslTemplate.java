@@ -64,10 +64,20 @@ public class Zg2proRestSslTemplate extends AbstractZg2proRestTemplate {
         );
     }
 
+    /**
+     * default interceptors and converters, just provide your keystore information
+     * @param keystore 
+     */
     public Zg2proRestSslTemplate(UnloadedKeystore keystore) {
         this(keystore, null);
     }
 
+    /**
+     * default interceptors and converters, just provide your keystore information and jackson
+     * simpleModule
+     * @param keystore
+     * @param sm 
+     */
     public Zg2proRestSslTemplate(UnloadedKeystore keystore, SimpleModule sm) {
         super(sm);
         //interceptors
@@ -77,6 +87,12 @@ public class Zg2proRestSslTemplate extends AbstractZg2proRestTemplate {
         this.setRequestFactory(LoggingSslRequestFactoryFactory.build(keystore, lri));
     }
 
+    /**
+     * specify the interceptors and converters you want and also your keystore information
+     * @param keystore
+     * @param lConverters
+     * @param lInterceptors 
+     */
     public Zg2proRestSslTemplate(
             UnloadedKeystore keystore, 
             List<HttpMessageConverter<?>> lConverters, 

@@ -27,7 +27,8 @@ import org.apache.http.client.HttpClient;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 
 /**
- *
+ * HttpRequestFactory adapted to httpclient and ssl, with zg2pro features enabled
+ * 
  * @author zg2pro
  */
 public class Zg2proSslHttpRequestFactory extends HttpComponentsClientHttpRequestFactory {
