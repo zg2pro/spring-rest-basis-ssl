@@ -1,7 +1,7 @@
 # spring-rest-basis-ssl
 
 [![MIT](https://img.shields.io/npm/l/inferno.svg?style=flat-square)](https://github.com/zg2pro/spring-rest-basis-ssl/blob/master/LICENSE.md)
-[![Build](https://travis-ci.org/zg2pro/spring-rest-basis-ssl.svg?branch=master)](https://travis-ci.org/zg2pro/spring-rest-basis-ssl)
+[![Build](https://travis-ci.com/zg2pro/spring-rest-basis-ssl.svg?branch=master)](https://travis-ci.com/zg2pro/spring-rest-basis-ssl)
 [![codecov](https://codecov.io/gh/zg2pro/spring-rest-basis-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/zg2pro/spring-rest-basis-ssl/branch/master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/zg2pro/spring-rest-basis-ssl?branch=master)](https://bettercodehub.com/)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.zg2pro/spring-rest-basis-ssl/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.zg2pro/spring-rest-basis-ssl)
